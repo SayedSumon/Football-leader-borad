@@ -8,7 +8,7 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-.detail p{
+.detail p, .h-title p, .r-title p, .th-head{
     font-weight: 400;
     color:#80838f;
 }
@@ -91,9 +91,45 @@ header{
     height: 256px;
     margin:0;
 }
+.player:hover{
+    transform: scale(1.1);
+    transition: transform 1.5s ease-out;
+}
 
 /* playlist styles */
+.highlight{
+    display: flex;
+    align-items: center;
+    margin-left: 186px;
+}
+.half-width{
+    width:50%;
+    padding: 5%;
+}
+.h-title{
+    width: 200px;
+    height: 250px;
+    overflow-y: scroll;
+}
 
+/* table styles */
+.ranking{
+    display: flex;
+    align-items: center;
+    margin-left: 186px;
+}
+.r-title{
+    width: 200px;
+    height: 250px;
+}
+table {
+    border-collapse: collapse;
+}
+
+td, th{
+    border-bottom: 1px solid lightslategray;
+    padding: 0px 10px 10px;
+}
 
 /* footer styles */
 .logo{
